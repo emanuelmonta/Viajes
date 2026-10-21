@@ -1,4 +1,5 @@
 import { cotizarTramo } from "./cotizador.js";
+import { obtenerTarifaBase } from "./tarifas.js";
 
 function mostrarMenu (){
     let tipoDestino = prompt("¿Es un viaje de Destino Único o Multidestino?");
@@ -17,7 +18,7 @@ function mostrarMenu (){
         let tipoPaquete = prompt("¿Qué paquete desea?\n unico\n combo");
         
 
-        cotizarTramo(tipoRuta, destino, tipoPaquete);
+        alert(cotizarTramo(tipoRuta, destino, tipoPaquete,obtenerTarifaBase));
     }
 }
 

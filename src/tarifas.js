@@ -1,5 +1,4 @@
 export function obtenerTarifaBase(tipoRuta, destino){
-    let destino
     let precioBase
     if  (tipoRuta === "nacional"){
         destino = prompt("Ingrese su destino nacional\n Bogotá\n Cartagena\n Cali")
